@@ -5,7 +5,7 @@
 		<description>Adds the Mogogol frog race to Aurora Builder</description>
 		<author url="https://i.4pcdn.org/tg/1378268799897.pdf">Remarkable Races: Mogogol</author>
 		<update version="0.2.3">
-			<file name="race-mogogol.xml" url="race-mogogol.xml" />
+			<file name="race-mogogol.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/race-mogogol.xml" />
 		</update>
 	</info>
 	
