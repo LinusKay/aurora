@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mogogol</name>
+		<description>Adds the Mogogol frog race to Aurora Builder</description>
+		<author url="https://i.4pcdn.org/tg/1378268799897.pdf">Remarkable Races: Mogogol</author>
+		<update version="0.2.3">
+			<file name="race-mogogol.xml" url="race-mogogol.xml" />
+		</update>
+	</info>
+	
+	<element name="Mogogol" type="Race" source="Remarkable Races: Mogogol" id="ID_RACE_MOGOGOL">
+		<description>
+			<p class="flavor">A subrace of Bog-bullies (frog-men) driven to goodness and mania by an unknown affliction.</p>
+			<p>The mogogols began as an offshoot group of boggards (frog people) who were driven from their swampy homes by another group of boggards. Also around this time, the offshoot group underwent an unexplained change, possibly magical in nature, which caused them to be more open and tolerant of outsiders and practically incapable of intentionally committing an evil act. The group eventually settled in and near saltwater marshes along the coasts and over time their forced contact with outsiders prompted them to take up a seafaring lifestyle.  While not as skilled at seafaring as other races, mogogols have made their livings transporting cargo and fishing.  The greater exposure to the outside world has also resulted in more genetic diversity, producing a stronger and healthier race. The mogogols of today have only a few common characteristics with their boggard cousins.</p>
+
+			<h4>PHYSICALLY PHROGGY</h4>
+			<p>Mogogols are essentially overgrown frogs that managed to learn to speak, walk upright, and wear clothes. It is immediately apparent to anyone visiting a mogogol village that there really is no standard look for a mogogol, except that they are froglike. A mogogol’s form can be patterned after tree frogs, toads, bullfrogs, and can have just about any sort of coloring, spots, stripes, bumps, or superficial differences that make each individual a little different from the other.</p>
+			<p class="indent">Despite their prolific variety, mogogols do have a few things in common. All Mogogols have three fingers and one thumb on each hand. Their feet are webbed to help them swim. They have no finger nails, but do have small claws on their feet.  They have extremely muscular legs, which aid in swimming and jumping. Small mogogols can utilize their disproportionately long limbs, finger pads and light weight to climb extremely well. </p>
+			<p class="indent">Male and female mogogols are virtually identical in appearance, and gender has little meaning for the species. Additionally, if the population has a shortage on one gender, the older members of the tribe automatically transform into the gender that is needed.</p>
+
+			<h4>MOGOGOL MOGOGOL</h4>
+			<p>The first, and most confusing tradition surounding naming practices, is that all mogogols are named Mogogol. Mogogol are disinguished by the words tacked onto the end of their name that vaguely describe them. So one would know one Mogogol from another by calling one “Mogogol with the green spots” or “Mogogol who broke his leg”. Nearly all Mogogols are guaranteed the title of Father or Mother if they have children, and Grandfather or Grandmother if they live to see their children have children. Generally Mogogols make no distinction between male and female (in fact, the title of Father and Mother is often awarded incorrectly).</p>
+			<b>Names: </b>Mogogol with the blue stripe, Mogogol with the, Mogogol, Mogogol, Mogogol, Mogogol, Mogogol. Mogogol.
+			<br/>
+			
+			<h4>MOGOGOL TRAITS</h4>
+			<p>Your frog-like heritage manifests in a variety of traits you share with other Mogogol.</p>
+			<p>
+			<span class="feature">Ability Score Increase.</span>Your Constitution and Charisma increase by +2.
+			<br />
+			<span class="feature">Age.</span>Young Mogogol spend the start of their lives unable to leave the water. At age 3, they begin to look less like tadpoles and walk on land. By age 6, they look like normal, albeit small (2-3 feet tall) mogogols. At this age they are able to learn skills and speech. They tend to reach old age at about 50, aging slightly quicker than humans.  
+			<br />
+			<span class="feature">Alignment.</span>Mogogol are inately good creatures, driven to goodness and mania.
+			<br />
+			<span class="feature">Size.</span>Mogogol are shorter than most humans, standing between 3 and 5 feet. Your size is Small or Medium.
+			<br />
+			<span class="feature">Speed.</span>Your base walking and swimming speed is 25 feet.
+			<br />
+			<span class="feature">Aquatic.</span>You can breathe normally in water and ignore rough water while swimming. You do not need to make athletics checks to swim unless you are wearing heavy armor. 
+			<br />
+			<span class="feature">Natural Jumper.</span>You are always considered to have a running start when making Athletics checks to jump. In addition, you may use Leap as an encounter power.
+			<br />
+			<span class="feature">Natural Climber.</span>You gain a +10 on athletics checks to climb.
+			<br />
+			<span class="feature">Leap.</span>Your powerful legs have granted you incredible jumping distance and height, allowing you to take a prodigious leap. You make an Athletics check to jump with a +10 power bonus.  If you jump vertically, you may make the check as though you were jumping horizontally. 
+			<br />
+			<span class="feature">Languages.</span>You can speak, read, and write Common and ... Frog? Ribbit. 
+			<br />
+			</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn</set>
+			<set name="names" type="female">Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit</set>
+			<set name="names" type="childhood">Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous</set>
+			<set name="height" modifier="2d8">3'6"</set>
+			<set name="weight" modifier="2d6">175 lb.</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="2" requirements="!ID_WOTC_EGTW_GRANTS_MOGOGOL_VARIANT" />
+			<stat name="charisma" value="2" requirements="!ID_WOTC_EGTW_GRANTS_MOGOGOL_VARIANT" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<stat name="innate speed:swim" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<grant type="Racial Trait" id="ID_RRM_RACIAL_TRAIT_AQUATIC" />
+			<grant type="Racial Trait" id="ID_RRM_RACIAL_TRAIT_NATURAL_JUMPER" />
+			<grant type="Racial Trait" id="ID_RRM_RACIAL_TRAIT_NATURAL_CLIMBER" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE" />
+		</rules>
+	</element>
+	<element name="Aquatic" type="Racial Trait" source="Remarkable Races: Mogogol" id="ID_RRM_RACIAL_TRAIT_AQUATIC">
+		<description>
+			<p>You can breathe normally in water and ignore rough water while swimming. You do not need  to make athletics checks to swim unless you are wearing heavy armor. </p>
+		</description>
+		<sheet>
+			<description>You can breathe normally in water and ignore rough water while swimming. You do not need  to make athletics checks to swim unless you are wearing heavy armor. </description>
+		</sheet>
+	</element>
+	<element name="Natural Jumper" type="Racial Trait" source="Remarkable Races: Mogogol" id="ID_RRM_RACIAL_TRAIT_NATURAL_JUMPER">
+		<description>
+			<p>You are always considered to have a running start when making Athletics checks to jump.</p>
+		</description>
+		<sheet>
+			<description>You are always considered to have a running start when making Athletics checks to jump.</description>
+		</sheet>
+	</element>
+	<element name="Natural Climber" type="Racial Trait" source="Remarkable Races: Mogogol" id="ID_RRM_RACIAL_TRAIT_NATURAL_CLIMBER">
+		<description>
+			<p>You gain advantage on athletics checks to climb.</p>
+		</description>
+		<sheet>
+			<description>You gain advantage on athletics checks to climb.</description>
+		</sheet>
+	</element>
+	<element name="Extra Language" type="Racial Trait" source="Remarkable Races: Mogogol" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE">
+		<description>
+			<p>You can speak, read, and write one extra language of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Language" name="Language (Frog)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+</elements>
