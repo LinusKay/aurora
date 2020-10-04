@@ -5,11 +5,11 @@
 		<description>The Remarkable Races: Mogogol Handbook is the essential reference for every Dungeons &amp; Dragons frog. </description>
 		<author url="https://i.4pcdn.org/tg/1378268799897.pdf">Alluria Publishing</author>
 		<update version="0.2">
-			<file name="race-mogogol.index" url="https://raw.githubusercontent.com/LinusKay/race-mogogol/master/race-mogogol.index" />
+			<file name="race-mogogol.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/race-mogogol.index" />
 		</update>
 	</info>
 	<files>	
 		<!-- races -->
-		<file name="race-mogogol.xml" url="https://raw.githubusercontent.com/LinusKay/race-mogogol/master/race-mogogol.xml" />
+		<file name="race-mogogol.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/race-mogogol.xml" />
 	</files>
 </index>
