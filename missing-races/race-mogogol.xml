@@ -4,7 +4,7 @@
 		<name>Mogogol</name>
 		<description>Adds the Mogogol frog race to Aurora Builder</description>
 		<author url="https://i.4pcdn.org/tg/1378268799897.pdf">Remarkable Races: Mogogol</author>
-		<update version="0.2.3">
+		<update version="0.1">
 			<file name="race-mogogol.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/race-mogogol.xml" />
 		</update>
 	</info>
@@ -51,9 +51,9 @@
 		</description>
 		<sheet display="false" />
 		<setters>
-			<set name="names" type="male">Arjhan, Balasar, Bharash, Donaar, Ghesh, Heskan, Kriv, Medrash, Mehen, Nadarr, Pandjed, Patrin, Rhogar, Shamash, Shedinn, Tarhun, Torinn</set>
-			<set name="names" type="female">Akra, Biri, Daar, Farideh, Harann, Flavilar, Jheri, Kava, Korinn, Mishann, Nala, Perra, Raiann, Sora, Surina, Thava, Uadjit</set>
-			<set name="names" type="childhood">Climber, Earbender, Leaper, Pious, Shieldbiter, Zealous</set>
+			<set name="names" type="male">Mogogol</set>
+			<set name="names" type="female">Mogogol</set>
+			<set name="names" type="childhood">Mogogol</set>
 			<set name="height" modifier="2d8">3'6"</set>
 			<set name="weight" modifier="2d6">175 lb.</set>
 		</setters>
@@ -102,7 +102,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Language" name="Language (Frog)" supports="Standard||Exotic" />
+			<select type="Language" name="Language (Mogogol)" supports="Standard||Exotic" />
 		</rules>
 	</element>
 </elements>
