@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>Remarkable Races: Mogogol</name>
-		<description>The Remarkable Races: Mogogol Handbook is the essential reference for every Dungeons &amp; Dragons frog. </description>
-		<author url="https://i.4pcdn.org/tg/1378268799897.pdf">Alluria Publishing</author>
+		<name>Missing Races</name>
+		<description>Missing races is a small collection of any races, classes or items that are not commonly covered by other material. </description>
+		<author url="">Linus Kay</author>
 		<update version="0.1">
-			<file name="race-mogogol.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/missing-races/missing-races.index" />
+			<file name="missing-races.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/missing-races/missing-races.index" />
 		</update>
 	</info>
 	<files>	
