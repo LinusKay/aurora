@@ -5,7 +5,7 @@
 		<description>A collection of mystical items, passed down from the gods, all bestowing great power on the user.</description>
 		<author url="">Linus Kay</author>
 		<update version="0.1">
-			<file name="missing-races.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/forgotten-boons/forgotten-boons.index" />
+			<file name="forgotten-boons.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/forgotten-boons/forgotten-boons.index" />
 		</update>
 	</info>
 	<files>	

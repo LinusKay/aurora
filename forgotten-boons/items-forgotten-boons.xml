@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<name>Boons</name>
-		<update version="0.0.4">
+		<name>Forgotten Boons</name>
+		<update version="0.1">
 			<file name="items-forgotten-boons.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/forgotten-boons/forgotten-boons.index" />
 		</update>
 	</info>
