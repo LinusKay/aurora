@@ -17,4 +17,17 @@
 			<set name="type">Tool</set>
 		</setters>
 	</element>
+    <element name="Lover's Triumph" type="Weapon" source="Forgotten Boons" id="ID_BOON_LOVERS_BOW">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_BOWS</supports>
+		<description>
+			<p>Fire an ethereal arrow with a random effect. Effects are shuffled at the beginning of each session, and can be either positive or negative.</p>
+			<p>Roll a d20 to determine effect.</p>
+		</description>
+		<setters>
+			<set name="category">Boons</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="6">6 lbs.</set>
+			<set name="type">Tool</set>
+		</setters>
+	</element>
 </elements>
