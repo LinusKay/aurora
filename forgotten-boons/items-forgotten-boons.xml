@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Boons</name>
+		<update version="0.0.4">
+			<file name="items-forgotten-boons.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/forgotten-boons/forgotten-boons.index" />
+		</update>
+	</info>
+    <element name="Nephalnomicon" type="Item" source="Forgotten Boons" id="ID_BOON_NEPHALNOMICON">
+		<description>
+			<p>Gain knowledge on a desired subject. Guarantees success on any perception, investigation or insight check on a specific target.</p>
+		</description>
+		<setters>
+			<set name="category">Boons</set>
+			<set name="cost" currency="gp">8</set>
+			<set name="weight" lb="6">6 lbs.</set>
+			<set name="type">Tool</set>
+		</setters>
+	</element>
+</elements>

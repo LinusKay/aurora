@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Forgotten Boons</name>
+		<description>A collection of mystical items, passed down from the gods, all bestowing great power on the user.</description>
+		<author url="">Linus Kay</author>
+		<update version="0.1">
+			<file name="missing-races.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/forgotten-boons/forgotten-boons.index" />
+		</update>
+	</info>
+	<files>	
+		<!-- load items -->
+		<file name="items-forgotten-boons.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/forgotten-boons/items-forgotten-boons.index" />
+	</files>
+</index>
