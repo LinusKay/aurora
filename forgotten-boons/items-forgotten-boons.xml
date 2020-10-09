@@ -27,7 +27,7 @@
 			<set name="category">Boons</set>
 			<set name="cost" currency="gp">8</set>
 			<set name="weight" lb="6">6 lbs.</set>
-			<set name="type">Tool</set>
+			<set name="type">Weapon</set>
 		</setters>
 	</element>
 </elements>
