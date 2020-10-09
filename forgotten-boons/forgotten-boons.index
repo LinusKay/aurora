@@ -10,6 +10,6 @@
 	</info>
 	<files>	
 		<!-- load items -->
-		<file name="items-forgotten-boons.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/forgotten-boons/items-forgotten-boons.index" />
+		<file name="items-forgotten-boons.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/forgotten-boons/items-forgotten-boons.xml" />
 	</files>
 </index>
