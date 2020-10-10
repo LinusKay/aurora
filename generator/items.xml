@@ -3,7 +3,7 @@
     <info>
         <name>XML Generator: Items</name>
         <update version="1.0">
-            <file name="items.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/forgotten-boons/forgotten-boons.index"/>
+            <file name="xml-generator.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/generator/xml-generator.index"/>
         </update>
     </info>
     <element name="ARMOUR ITEM" type="armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_ARMOUR ITEM">
@@ -17,6 +17,7 @@
             <set name="armorClass">16</set>
             <set name="stealth">Disadvantage</set>
             <set name="strength">13</set>
+            <set name="rarity">Rare</set>
         </setters>
         <rules>
             <stat name="ac:armored:armor" value="16"/>
