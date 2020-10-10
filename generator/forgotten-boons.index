@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>XML Generator</name>
+		<description>Testing the XML generator</description>
+		<author url="">Linus Kay</author>
+		<update version="0.1">
+			<file name="xml-generator.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/generator/xml-generator.index" />
+		</update>
+	</info>
+	<files>	
+		<!-- load items -->
+		<file name="items.xml" url="https://raw.githubusercontent.com/LinusKay/aurora/master/generator/items.xml" />
+	</files>
+</index>
