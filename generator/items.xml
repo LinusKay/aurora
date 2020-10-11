@@ -22,6 +22,7 @@
         </setters>
     </element>
     <element name="Epic chestplate" type="Armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_EPIC_CHESTPLATE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
         <description>
             <p>A real strong chestplate</p>
         </description>
@@ -40,6 +41,7 @@
         </rules>
     </element>
     <element name="Epic shield" type="Armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_EPIC_SHIELD">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
         <description>
             <p>A real strong shield</p>
         </description>
@@ -48,6 +50,7 @@
             <set name="cost" currency="gp">150</set>
             <set name="weight" lb="4">4 lb.</set>
             <set name="slot">onehand,twohand</set>
+            <set name="proficiency">ID_PROFICIENCY_XMLGI_PROFICIENCY_EPIC_SHIELD</set>
             <set name="armor">Heavy</set>
             <set name="armorClass">12 + Dex Modifier</set>
             <set name="stealth">disadvantage</set>
