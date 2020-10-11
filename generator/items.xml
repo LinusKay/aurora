@@ -6,7 +6,8 @@
             <file name="xml-generator.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/generator/xml-generator.index"/>
         </update>
     </info>
-    <element name="Blazing Sword" type="Weapon" source="XML Generator: Items" id="ID_XMLGI_WEAPON_BLAZING SWORD">
+    <element name="Blazing Sword" type="Weapon" source="XML Generator: Items" id="ID_XMLGI_WEAPON_BLAZING_SWORD">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_FIRE</supports>
         <description>
             <p>A fiery, blazing sword awash in flames</p>
         </description>
@@ -20,7 +21,7 @@
             <set name="proficiency">ID_PROFICIENCY_XMLGI_PROFICIENCY_BLAZING_SWORD</set>
         </setters>
     </element>
-    <element name="Epic chestplate" type="Armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_EPIC CHESTPLATE">
+    <element name="Epic chestplate" type="Armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_EPIC_CHESTPLATE">
         <description>
             <p>A real strong chestplate</p>
         </description>
@@ -38,7 +39,7 @@
             <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
         </rules>
     </element>
-    <element name="Epic shield" type="Armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_EPIC SHIELD">
+    <element name="Epic shield" type="Armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_EPIC_SHIELD">
         <description>
             <p>A real strong shield</p>
         </description>
@@ -59,7 +60,7 @@
             <stat name="ac:shield" value="2" bonus="shield"/>
         </rules>
     </element>
-    <element name="Special Pack" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_SPECIAL PACK">
+    <element name="Special Pack" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_SPECIAL_PACK">
         <description>
             <p>A pack full of special goodies</p>
         </description>
@@ -94,7 +95,6 @@
             <set name="category">Rare Treasure</set>
             <set name="cost" currency="gp">400</set>
             <set name="weight" lb="2">2 lb.</set>
-            <set name="rarity">Rare</set>
         </setters>
     </element>
 </elements>
