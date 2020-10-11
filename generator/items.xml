@@ -6,98 +6,96 @@
             <file name="xml-generator.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/generator/xml-generator.index"/>
         </update>
     </info>
-    <element name="Blazing Sword" type="Weapon" source="XML Generator: Items" id="ID_XMLGI_WEAPON_BLAZING_SWORD">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_DAMAGE_TYPE_FIRE</supports>
+    <element name="big sword" type="Weapon" source="XML Generator: Items" id="ID_XMLGI_WEAPON_BIG_SWORD">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
         <description>
-            <p>A fiery, blazing sword awash in flames</p>
+            <p>big sword</p>
+            <p/>
         </description>
         <setters>
             <set name="category">Weapons</set>
-            <set name="cost" currency="gp">500</set>
+            <set name="cost" currency="gp">100</set>
             <set name="weight" lb="6">6 lb.</set>
-            <set name="slot">onehand, twohand</set>
-            <set name="damage" type="slashing, fire">1d8</set>
-            <set name="versatile">1d10</set>
-            <set name="proficiency">ID_PROFICIENCY_XMLGI_PROFICIENCY_BLAZING_SWORD</set>
-        </setters>
-    </element>
-    <element name="Epic chestplate" type="Armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_EPIC_CHESTPLATE">
-        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
-        <description>
-            <p>A real strong chestplate</p>
-        </description>
-        <setters>
-            <set name="category">Armor</set>
-            <set name="cost" currency="gp">150</set>
-            <set name="weight" lb="4">4 lb.</set>
-            <set name="slot">body</set>
-            <set name="armor">Heavy</set>
-            <set name="armorClass">12 + Dex Modifier</set>
-            <set name="stealth">disadvantage</set>
-        </setters>
-        <rules>
-            <stat name="ac:armored:armor" value="12 + Dex Modifier"/>
-            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
-        </rules>
-    </element>
-    <element name="Epic shield" type="Armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_EPIC_SHIELD">
-        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
-        <description>
-            <p>A real strong shield</p>
-        </description>
-        <setters>
-            <set name="category">Armor</set>
-            <set name="cost" currency="gp">150</set>
-            <set name="weight" lb="4">4 lb.</set>
             <set name="slot">onehand,twohand</set>
-            <set name="proficiency">ID_PROFICIENCY_XMLGI_PROFICIENCY_EPIC_SHIELD</set>
-            <set name="armor">Heavy</set>
-            <set name="armorClass">12 + Dex Modifier</set>
-            <set name="stealth">disadvantage</set>
+            <set name="damage" type="slashing">1d6</set>
+            <set name="proficiency">ID_PROFICIENCY_XMLGI_PROFICIENCY_BIG_SWORD</set>
+        </setters>
+    </element>
+    <element name="big chestplate" type="Armor" source="XML Generator: Items" id="ID_XMLGI_ARMOR_BIG_CHESTPLATE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>its a bit chestplate</p>
+        </description>
+        <setters>
+            <set name="category">Armor</set>
+            <set name="cost" currency="gp">150</set>
+            <set name="weight" lb="6">6 lb.</set>
+            <set name="slot">body</set>
+            <set name="armor">heavy</set>
+            <set name="armorClass">12 + str modifier</set>
+            <set name="stealth">Disadvantage</set>
             <set name="strength">13</set>
         </setters>
         <rules>
-            <stat name="ac:armored:armor" value="12 + Dex Modifier"/>
+            <stat name="ac:armored:armor" value="12 + str modifier"/>
             <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
             <stat name="speed" value="-10" bonus="armor" requirements="![str:13]"/>
-            <stat name="ac:shield" value="2" bonus="shield"/>
         </rules>
     </element>
-    <element name="Special Pack" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_SPECIAL_PACK">
+    <element name="shiny gold" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_SHINY_GOLD">
         <description>
-            <p>A pack full of special goodies</p>
+            <p>its a really shiny piece of gold</p>
         </description>
         <setters>
-            <set name="category">Equipment Packs</set>
+            <set name="category">rare treasure</set>
             <set name="cost" currency="gp">150</set>
-            <set name="weight" lb="9">9 lb.</set>
+            <set name="weight" lb="3">3 lb.</set>
+        </setters>
+    </element>
+    <element name="Pack of stuff" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_PACK_OF_STUFF">
+        <description>
+            <p>a pack full of stuff</p>
+        </description>
+        <setters>
+            <set name="category">Equipment packs</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="4">4 lb.</set>
         </setters>
         <extract>
-            <item amount="1">ID_WOTC_PHB_ITEM_BACKPACK</item>
-            <item amount="1">ID_WOTC_PHB_ITEM_BOOK</item>
-            <item amount="1">ID_WOTC_PHB_ITEM_INK_1OUNCEBOTTLE</item>
-            <item amount="1">ID_WOTC_PHB_ITEM_INKPEN</item>
-            <item amount="10">ID_WOTC_PHB_ITEM_PARCHMENT_ONESHEET</item>
+            <item amount="1">something</item>
+            <item amount="others">some</item>
         </extract>
     </element>
-    <element name="Gold" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_GOLD">
+    <element name="saddle" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_SADDLE">
         <description>
-            <p>Shiny, shiny gold</p>
+            <p>issa saddle</p>
         </description>
         <setters>
-            <set name="category">Rare Treasure</set>
-            <set name="cost" currency="gp">100</set>
-            <set name="weight" lb="2">2 lb.</set>
+            <set name="category">Mounts &amp; Vehicles</set>
+            <set name="cost" currency="gp">15</set>
+            <set name="weight" lb="4">4 lb.</set>
         </setters>
     </element>
-    <element name="Diamond" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_DIAMOND">
+    <element name="horn" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_HORN">
+        <supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
         <description>
-            <p>epic gamer diamonds</p>
+            <p>issa horn init</p>
         </description>
         <setters>
-            <set name="category">Rare Treasure</set>
-            <set name="cost" currency="gp">400</set>
-            <set name="weight" lb="2">2 lb.</set>
+            <set name="category">Musical Instruments</set>
+            <set name="cost" currency="gp">5000</set>
+            <set name="weight" lb="5">5 lb.</set>
+        </setters>
+    </element>
+    <element name="candle" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_CANDLE">
+        <description>
+            <p>candlleee</p>
+        </description>
+        <setters>
+            <set name="category">Adventuring Gear</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="1">1 lb.</set>
+            <set name="stackable">true</set>
         </setters>
     </element>
 </elements>
