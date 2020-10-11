@@ -6,20 +6,25 @@
             <file name="xml-generator.index" url="https://raw.githubusercontent.com/LinusKay/aurora/master/generator/xml-generator.index"/>
         </update>
     </info>
-    <element name="Flame sword" type="Weapon" source="XML Generator: Items" id="ID_XMLGI_WEAPON_FLAME SWORD">
-        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_GROUP_SWORDS, ID_INTERNAL_DAMAGE_TYPE_SLASHING</supports>
+    <element name="Gold" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_GOLD">
         <description>
-            <p>a sword on fire</p>
+            <p>Shiny, shiny gold</p>
         </description>
         <setters>
-            <set name="category">Weapons</set>
+            <set name="category">Rare Treasure</set>
             <set name="cost" currency="gp">100</set>
-            <set name="weight" lbs="7">7</set>
-            <set name="slot">twohand</set>
-            <set name="damage" type="slashing">1d8</set>
-            <set name="proficiency">ID_PROFICIENCY_XMLGI_PROFICIENCY_FLAME_SWORD</set>
+            <set name="weight" lbs="2">2 lb.</set>
         </setters>
-        <rules/>
-        <extract/>
+    </element>
+    <element name="Diamond" type="Item" source="XML Generator: Items" id="ID_XMLGI_ITEM_DIAMOND">
+        <description>
+            <p>epic gamer diamonds</p>
+        </description>
+        <setters>
+            <set name="category">Rare Treasure</set>
+            <set name="cost" currency="gp">400</set>
+            <set name="weight" lbs="2">2 lb.</set>
+            <set name="slot">Rare</set>
+        </setters>
     </element>
 </elements>
